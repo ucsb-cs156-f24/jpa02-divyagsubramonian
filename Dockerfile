@@ -10,9 +10,6 @@ RUN apk add bash
 RUN apk add maven
 RUN apk add --no-cache libstdc++
 
-RUN node --version
-RUN npm --version
-
 COPY src /home/app/src
 COPY lombok.config /home/app
 COPY pom.xml /home/app
