@@ -15,7 +15,7 @@ jobs:
           distribution: 'oracle' # See 'Supported distributions' for available options
           java-version: '21'
       - name: Build with Maven
-        run: mvn test jacoco:report
+        run: mvn test jacoco:report verify
       - name: Upload Jacoco to Artifacts
         uses: actions/upload-artifact@v2
         with:
